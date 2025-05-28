@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>regitro Carrera</title>
+</head>
+<style>
+    .oculto {
+        display:none
+    }
+</style>
+<body>
+    <section>
+       
+        <form>
+            <h2>Seleccione su categoria</h2>
+            <br>
+            
+            <select name="categoria" id="categoria" onchange="seleccion()">
+                <option value="">--categorias--</option>
+                <option value="alumno">alumno</option>
+                <option value="maestro">maestro/administrativo</option>
+                <option value="libre">libre</option>
+            </select>
+
+            <!--datos del alumno-->
+            <div id="Estuduiante" class="oculto">
+                <h3>Hola estudiante</h3>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="Nombre" ">
+                <br>
+                <label for="apellido1">Apellido Paterno</label>
+                <input type="text" id="apellido1" name="Apellido" >
+                <br>
+                <label for="apellido2">Apellido Materno</label>
+                <input type="text" id="apellido2" name="Apellido" >
+                <br>
+                <label for="rfid">RFID</label>
+                <input type="text" id="rfid" name="RFID"  >
+                <br>
+                <label for="carrera">Carrera</label>
+                <input type="text" id="carrera" name="Carrera">
+                <br>
+                <label for="semestre">Semestre</label>
+                <input type="text" id="semestre" name="semestre">
+                <br>
+                
+            </div>
+            <!--datos del Docente/administrativo-->
+            <div id="Docente" class="oculto">
+                <h3>Hola Docente/administrativo</h3>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="Nombre"><br>
+                <label for="apellido1">Apellido Paterno</label>
+                <input type="text" id="apellido1" name="Apellido"><br>
+                <label for="apellido2">Apellido Materno</label>
+                <input type="text" id="apellido2" name="Apellido"><br>
+                <label for="rfid">RFID</label>
+                <input type="text" id="rfid" name="RFID"><br>
+                <label for="carrera">Carrera</label>
+                <input type="text" id="carrera" name="Carrera"><br>
+                <label for="Puesto">Puesto</label>
+                <input type="text" id="Puesto" name="Puesto"><br>
+            </div>
+            <!--datos del libre-->
+            <div id="libre" class="oculto">
+                <h3>Hola compañero Corredor</h3>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="Nombre"><br>
+                <label for="apellido1">Apellido Paterno</label>
+                <input type="text" id="apellido1" name="Apellido"><br>
+                <label for="apellido2">Apellido Materno</label>
+                <input type="text" id="apellido2" name="Apellido"><br>
+                <label for="rfid">RFID</label>
+                <input type="text" id="rfid" name="RFID"><br>
+            </div>
+            </form>
+        <script>
+            function seleccion() {
+            var rol = document.getElementById("categoria").value;
+            document.getElementById("Estuduiante").style.display = rol === "alumno" ? "block" : "none";
+            document.getElementById("Docente").style.display = rol === "maestro" ? "block" : "none";
+            document.getElementById("libre").style.display = rol === "libre" ? "block" : "none";
+            }
+        </script>
+       
+        <a href="Registro.html">
+            <button type="submit"id="enviar">Aceptar</button>
+        </a>
+      
+        <br>
+    </section>
+</body>
+</html>
