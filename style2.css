@@ -1,0 +1,38 @@
+*{
+    
+     box-sizing: border-box;
+     font-family: 'poppins',monospace;
+
+}
+.titulo{
+     position: relative;
+    background-color: rgb(16, 157, 0);
+    padding: 20px 20px;
+     border-radius: 15px;
+}
+body{
+    
+
+}
+footer{
+     position: relative;
+    background-color: rgb(16, 157, 0);
+    padding: 20px 20px;
+    
+}
+.centro{
+     
+     position: relative; 
+     background-color: aqua;
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content:center;
+    align-items:normal;
+    padding: 8rem 5rem;
+    justify-content: center;
+   
+}
+form{
+     position: relative;
+     border-color: bisque;
+}
