@@ -5,25 +5,32 @@
 
 }
 .titulo{
+     background-image: url(imag/logo.png);
+     background-position:left; 
+     background-size:contain;
+      background-repeat: no-repeat;
      position: relative;
     background-color: rgb(16, 157, 0);
     padding: 20px 20px;
      border-radius: 15px;
 }
 body{
-    
-
+     background-image: url(imag/logo.png);
+      background-size:50cqi;
+     background-position:center;  
+     background-repeat: no-repeat;
 }
 footer{
      position: relative;
-    background-color: rgb(16, 157, 0);
+    background-color:rgb(16, 157, 0);
     padding: 20px 20px;
     
 }
 .centro{
-     
+    background:transparent;
+     margin: 70px 450px;
      position: relative; 
-     background-color: aqua;
+     
     backdrop-filter: blur(100px);
     display: flex;
     justify-content:center;
