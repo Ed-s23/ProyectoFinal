@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="css/style.css">
     <title>regitro Carrera</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/normalize.css">
+
 </head>
 <style>
     .oculto {
@@ -10,14 +14,22 @@
     }
 </style>
 <body>
-    <section>
+    <header class="titulo" id= "titulo" >
+        <img src="css/imag/logo.png" alt="logo tesji" width="60" height="60">
+        <h1 clas="enc">TECNILOGICO DE ESTUDIOS SUPERIORES DE JILOTEPEC</h1>
+        <h2> inicio a registros a carrera Atletica 2025</h2>
        
+    </header>
+
+    <section class="centro">
+        
+        
         <form>
             <h2>Seleccione su categoria</h2>
             <br>
             
-            <select name="categoria" id="categoria" onchange="seleccion()">
-                <option value="">--categorias--</option>
+            <select name="categoria" class= "categoria" id="categoria" onchange="seleccion()">
+                <option value="">categorias</option>
                 <option value="alumno">alumno</option>
                 <option value="maestro">maestro/administrativo</option>
                 <option value="libre">libre</option>
@@ -39,13 +51,30 @@
                 <input type="text" id="rfid" name="RFID"  >
                 <br>
                 <label for="carrera">Carrera</label>
-                <input type="text" id="carrera" name="Carrera">
-                <br>
+                <select name="carrera" id="carrera"">
+                    <option value ="">carrera</option>
+                    <option value="ISIC">sistaemas</option>
+                    <option value="Meca">Mecatronica</option>
+                    <option value="Meca">logistica</option>
+                    <option value="Meca">administracioin</option>
+                    <option value="Meca">civil</option>
+                </select><br>
                 <label for="semestre">Semestre</label>
-                <input type="text" id="semestre" name="semestre">
+                 <select name="carrera" id="carrera"">
+                    <option value ="">Semestre</option>
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="9">9</option>
+                </select><br>
                 <br>
                 
+
+            
+                               
             </div>
+
             <!--datos del Docente/administrativo-->
             <div id="Docente" class="oculto">
                 <h3>Hola Docente/administrativo</h3>
@@ -58,10 +87,18 @@
                 <label for="rfid">RFID</label>
                 <input type="text" id="rfid" name="RFID"><br>
                 <label for="carrera">Carrera</label>
-                <input type="text" id="carrera" name="Carrera"><br>
+                <select name="carrera" id="carrera"">
+                    <option value ="">CARREARA</option>
+                    <option value="ISIC">sistaemas</option>
+                    <option value="Mecatronica">Mecatronica</option>
+                    <option value="logistica">logistica</option>
+                    <option value="administracioin">administracioin</option>
+                    <option value="civil">civil</option>
+                </select><br>
                 <label for="Puesto">Puesto</label>
                 <input type="text" id="Puesto" name="Puesto"><br>
             </div>
+
             <!--datos del libre-->
             <div id="libre" class="oculto">
                 <h3>Hola compañero Corredor</h3>
@@ -75,14 +112,15 @@
                 <input type="text" id="rfid" name="RFID"><br>
             </div>
             </form>
-        <script>
-            function seleccion() {
-            var rol = document.getElementById("categoria").value;
-            document.getElementById("Estuduiante").style.display = rol === "alumno" ? "block" : "none";
-            document.getElementById("Docente").style.display = rol === "maestro" ? "block" : "none";
-            document.getElementById("libre").style.display = rol === "libre" ? "block" : "none";
-            }
-        </script>
+           
+            <script>
+                function seleccion() {
+                var rol = document.getElementById("categoria").value;
+                document.getElementById("Estuduiante").style.display = rol === "alumno" ? "block" : "none";
+                document.getElementById("Docente").style.display = rol === "maestro" ? "block" : "none";
+                document.getElementById("libre").style.display = rol === "libre" ? "block" : "none";
+                }
+            </script>
        
         <a href="Registro.html">
             <button type="submit"id="enviar">Aceptar</button>
@@ -90,5 +128,10 @@
       
         <br>
     </section>
+    <footer>
+        <h1> Referencias </h1><br>
+        <h2>hola</h2>
+
+    </footer>
 </body>
 </html>
