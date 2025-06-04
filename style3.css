@@ -1,0 +1,91 @@
+*{
+    
+     box-sizing: border-box;
+     font-family: 'poppins',monospace;
+
+}
+img{
+     position:relative;
+     object-fit: cover;
+    
+     
+}
+.enc{
+     position: fixed;
+       bottom: 0;
+      right: 0;
+      width: 300px;
+
+}
+.titulo{
+     text-align:left;
+     background-color:darkgreen;
+     padding: 20px 20x;
+     border-radius: 15px;
+
+}
+.centrol{
+     
+      display:grid;
+      margin:0  auto ;
+      padding: 10px 20px;
+}
+
+body{
+      
+    background-color: rgb(255, 255, 255);
+     background-size:50cqi;
+     background-position:center;  
+     background-repeat: no-repeat;
+     display: flexs;
+     flex-direction:inherit;
+}
+
+.centro{
+  
+    background:transparent;
+     margin: 70px 450px;
+     position: absolute; 
+     border-radius: 15px;
+     outline-style: solid;
+     outline-color: rgb(0, 0, 0) ;
+     outline-width: thick;
+     border:1px  solid black;
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content:center;
+    align-items:normal;
+    padding: 8rem 5rem;
+    justify-content: center;
+   
+}
+
+.piePag{
+ background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+
+} 
+
+button{
+     padding:10px 15px;
+     background-color: rgb(255, 255, 255);
+     border:none;
+     box-shadow: 0 0 5px rgb(237, 255, 34), 0 0 25px rgb(134, 255, 118);
+     font-size: 1.1rem;
+     border-radius: 15px;
+     cursor: pointer;
+     margin-bottom: 15px;
+}
+label{
+     height: 15%;
+}
+.categoria{
+     background-color: rgb(252, 255, 226);
+     box-shadow:0 0 5px rgb(237, 255, 34), 0 0 25px rgb(210, 249, 205) ;
+     border-radius: 10px;
+     padding: 10px 15px;     
+}
+input{
+     border-radius: 10px;
+}
