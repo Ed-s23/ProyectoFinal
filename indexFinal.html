@@ -3,25 +3,20 @@
 <head>
    <link rel="stylesheet" href="css/style.css">
     <title>regitro Carrera</title>
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="css/normalize.css">
 
 </head>
-<style>
-    .oculto {
-        display:none
-    }
-</style>
+
 <body>
 
     
     <section class="centro">
-               <header class="titulo" id= "titulo" >
+    <header class="titulo" id= "titulo" >
         <img src="css/imag/logo.png" alt="logo tesji" width="60" height="60">
         <h1 clas="enc">TECNILOGICO DE ESTUDIOS SUPERIORES DE JILOTEPEC</h1>
         <h2> inicio a registros a carrera Atletica 2025</h2>
-       
+    
     </header>   
         
         <form>
@@ -52,28 +47,39 @@
                 <input type="text" id="rfid" name="RFID"  >
                 <br>
                 <label for="carrera">Carrera</label>
+                <!--carrera-->
                 <select name="carrera" id="carrera"">
-                    <option value ="">carrera</option>
-                    <option value="ISIC">sistaemas</option>
-                    <option value="Meca">Mecatronica</option>
-                    <option value="Meca">logistica</option>
-                    <option value="Meca">administracioin</option>
-                    <option value="Meca">civil</option>
+                    <option value ="">seleccione su carrera</option>
+                    <option value="Civil">Ingenieria Civil</option>
+                    <option value="Electrica">Ingenieria Electrica</option>
+                    <option value="Industrial">Ingenieria Industrial</option>
+                    <option value="Mecatronica">Ingenieria Mecatronica</option>
+                    <option value="Quimica">Ingenieria Quimica</option>
+                    <option value="Logistica">Ingenieria Logistica</option>
+                    <option value="Sistemas">Ingenieria en Sistemas</option>
+                    <option value="Administracion">Licensiatura en Administracion</option>
+                    <option value="Informatica">Ingenieria en Tecnologias de la informacion</option>
                 </select><br>
                 <label for="semestre">Semestre</label>
                  <select name="carrera" id="carrera"">
-                    <option value ="">Semestre</option>
-                    <option value="1">1</option>
-                    <option value="3">3</option>
-                    <option value="5">5</option>
-                    <option value="7">7</option>
-                    <option value="9">9</option>
+                    <option value ="">Seleccione su semestre</option>
+                    <option value="1">1.mer</option>
+                    <option value="2">2.do</option>
+                    <option value="3">3.cer</option>
+                    <option value="4">4.to</option>
+                    <option value="5">5.to</option>
+                    <option value="6">6.to</option>
+                    <option value="7">7.mo</option>
+                    <option value="8">8.vo</option>
+                    <option value="9">9.no</option>
                 </select><br>
-                <br>
                 
-
-            
-                               
+                <label for="Cat">Seleccione su genero </label>
+                <select name="genero" id="genero">
+                    <option value="">Seleccione su genero</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>           
             </div>
 
             <!--datos del Docente/administrativo-->
@@ -89,14 +95,18 @@
                 <input type="text" id="rfid" name="RFID"><br>
                 <label for="carrera">Carrera</label>
                 <select name="carrera" id="carrera"">
-                    <option value ="">CARREARA</option>
-                    <option value="ISIC">sistaemas</option>
-                    <option value="Mecatronica">Mecatronica</option>
-                    <option value="logistica">logistica</option>
-                    <option value="administracioin">administracioin</option>
-                    <option value="civil">civil</option>
+                    <option value ="">seleccione su carrera</option>
+                    <option value="ISIC">Ingenieria Civil</option>
+                    <option value="Meca">Ingenieria Electrica</option>
+                    <option value="Meca">Ingenieria Industrial</option>
+                    <option value="Meca">Ingenieria Mecatronica</option>
+                    <option value="Meca">Ingenieria Quimica</option>
+                    <option value="Meca">Ingenieria Logistica</option>
+                    <option value="Meca">Ingenieria en Sistemas</option>
+                    <option value="Meca">Licensiatura en Administracion</option>
+                    <option value="Meca">Ingenieria en Tecnologias de la informacion</option>
                 </select><br>
-                <label for="Puesto">Puesto</label>
+                <label for="Puesto">Ingrese su puesto</label>
                 <input type="text" id="Puesto" name="Puesto"><br>
             </div>
 
@@ -113,15 +123,8 @@
                 <input type="text" id="rfid" name="RFID"><br>
             </div>
             </form>
-           
-            <script>
-                function seleccion() {
-                var rol = document.getElementById("categoria").value;
-                document.getElementById("Estuduiante").style.display = rol === "alumno" ? "block" : "none";
-                document.getElementById("Docente").style.display = rol === "maestro" ? "block" : "none";
-                document.getElementById("libre").style.display = rol === "libre" ? "block" : "none";
-                }
-            </script>
+           <script src="JavaScrip/seleccion.js"></script>
+          
        
         <a href="Registro.html">
             <button type="submit"id="enviar">Aceptar</button>
