@@ -1,0 +1,130 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+   
+}
+
+.centro {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #b1eab9;
+    border-radius: 8px;
+}
+
+.titulo img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.titulo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+    color: #167212;
+}
+
+.titulo h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #34A853; 
+}
+
+form h2 {
+    text-align: center;
+    color: #000000;
+}
+
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+.password{
+        width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+button#enviar {
+    margin-top: 1.5rem;
+    padding: 10px 100px;
+    background-color: #1d6f28;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button#enviar:hover {
+    background-color: #14501c;
+
+}
+
+
+.oculto {
+    display: none;
+}
+button#cancelar {
+     margin-top: 1.5rem;
+     padding: 10px 100px;
+     background-color: #ff0000;
+     color: white;
+     border: none;
+     border-radius: 12px;
+     font-size: 1.2rem;
+     cursor: pointer;
+     width: 100%;
+     transition: background-color 0.3s ease;
+}
+button#cancelar:hover{
+     background-color: rgb(99, 4, 4);
+}
+
+
+h3 {
+    color: #141a60; 
+    margin-top: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .centro {
+        padding: 1rem;
+    }
+
+    .titulo h1, .titulo h2 {
+        font-size: 1.1rem;
+    }
+}
+
