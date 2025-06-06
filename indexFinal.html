@@ -1,137 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-   <link rel="stylesheet" href="css/style.css">
-    <title>regitro Carrera</title>
+    <meta charset="UTF-8">
+    <title>Registro Carrera</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preload" href="css/normalize.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    
-    <section class="centro">
-    <header class="titulo" id= "titulo" >
+<section class="centro">
+    <header class="titulo" id="titulo">
         <img src="css/imag/logo.png" alt="logo tesji" width="60" height="60">
-        <h1 clas="enc">TECNILOGICO DE ESTUDIOS SUPERIORES DE JILOTEPEC</h1>
-        <h2> Vienvenido al registros a la Carrera Atletica 2025</h2>
-    
-    </header>   
-        
-        <form>
+        <h1 class="enc">TECNOLÓGICO DE ESTUDIOS SUPERIORES DE JILOTEPEC</h1>
+        <h2>Bienvenido al registro de la Carrera Atlética 2025</h2>
+    </header>
 
-            <h2>Seleccione su categoria</h2>
-            <br>
-            
-            <select name="Categoria" class= "categoria" id="categoria" onchange="seleccion()">
-                <option value="">-CATEGORIA</option>
-                <option value="alumno">-ALUMNO</option>
-                <option value="maestro">-MAESTRO/ADMINISTRATIVO</option>
-                <option value="libre">-LIBRE</option>
+    <form id="formulario">
+        <h2>Seleccione su categoría</h2>
+        <select name="Categoria" class="categoria" id="categoria" onchange="seleccion()">
+            <option value="">-- CATEGORÍA --</option>
+            <option value="alumno">Alumno</option>
+            <option value="maestro">Maestro / Administrativo</option>
+            <option value="libre">Libre</option>
+        </select>
+
+        <!-- Sección Alumno -->
+        <div id="Estudiante" class="oculto">
+            <h3>Datos del Alumno</h3>
+            <label>Nombre:</label>
+            <input type="text" id="nombreAlumno" name="nombreAlumno">
+
+            <label>Apellido Paterno:</label>
+            <input type="text" id="apellidoPaternoAlumno" name="apellidoPaternoAlumno">
+
+            <label>Apellido Materno:</label>
+            <input type="text" id="apellidoMaternoAlumno" name="apellidoMaternoAlumno">
+
+            <label>RFID:</label>
+            <input type="text" id="rfidAlumno" name="rfidAlumno">
+
+            <label>Carrera:</label>
+            <select name="carreraAlumno" id="carreraAlumno">
+                <option value="">Seleccione su carrera</option>
+                <option value="Civil">Ingeniería Civil</option>
+                <option value="Electrica">Ingeniería Eléctrica</option>
+                <option value="Industrial">Ingeniería Industrial</option>
+                <option value="Mecatronica">Ingeniería Mecatrónica</option>
+                <option value="Quimica">Ingeniería Química</option>
+                <option value="Logistica">Ingeniería Logística</option>
+                <option value="Sistemas">Ingeniería en Sistemas</option>
+                <option value="Administracion">Licenciatura en Administración</option>
+                <option value="Informatica">Tecnologías de la Información</option>
             </select>
 
-            <!--datos del alumno-->
-            <div id="Estuduiante" class="oculto">
-                <h3>Hola compañero Corredor</h3>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="Nombre" ">
-                <br>
-                <label for="apellido1">Apellido Paterno</label>
-                <input type="text" id="apellido1" name="Apellido" >
-                <br>
-                <label for="apellido2">Apellido Materno</label>
-                <input type="text" id="apellido2" name="Apellido" >
-                <br>
-                <label for="rfid">RFID</label>
-                <input type="text" id="rfid" name="RFID"  >
-                <br>
-                <label for="carrera">Carrera</label>
-                <!--carrera-->
-                <select name="carrera" id="carrera"">
-                    <option value ="">seleccione su carrera</option>
-                    <option value="Civil">Ingenieria Civil</option>
-                    <option value="Electrica">Ingenieria Electrica</option>
-                    <option value="Industrial">Ingenieria Industrial</option>
-                    <option value="Mecatronica">Ingenieria Mecatronica</option>
-                    <option value="Quimica">Ingenieria Quimica</option>
-                    <option value="Logistica">Ingenieria Logistica</option>
-                    <option value="Sistemas">Ingenieria en Sistemas</option>
-                    <option value="Administracion">Licensiatura en Administracion</option>
-                    <option value="Informatica">Ingenieria en Tecnologias de la informacion</option>
-                </select><br>
-                <label for="semestre">Semestre</label>
-                 <select name="carrera" id="carrera"">
-                    <option value ="">Seleccione su semestre</option>
-                    <option value="1">1.mer</option>
-                    <option value="2">2.do</option>
-                    <option value="3">3.cer</option>
-                    <option value="4">4.to</option>
-                    <option value="5">5.to</option>
-                    <option value="6">6.to</option>
-                    <option value="7">7.mo</option>
-                    <option value="8">8.vo</option>
-                    <option value="9">9.no</option>
-                </select><br>
-                
-                <label for="Cat">Seleccione su genero </label>
-                <select name="genero" id="genero">
-                    <option value="">Seleccione su genero</option>
-                    <option value="Hombre">Hombre</option>
-                    <option value="Mujer">Mujer</option>
-                </select>           
-            </div>
+            <label>Semestre:</label>
+            <select name="semestreAlumno" id="semestreAlumno">
+                <option value="">Seleccione su semestre</option>
+                <option value="1">1º</option>
+                <option value="2">2º</option>
+                <option value="3">3º</option>
+                <option value="4">4º</option>
+                <option value="5">5º</option>
+                <option value="6">6º</option>
+                <option value="7">7º</option>
+                <option value="8">8º</option>
+                <option value="9">9º</option>
+            </select>
 
-            <!--datos del Docente/administrativo-->
-            <div id="Docente" class="oculto">
-                <h3>Hola compañero Corredor</h3>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="Nombre"><br>
-                <label for="apellido1">Apellido Paterno</label>
-                <input type="text" id="apellido1" name="Apellido"><br>
-                <label for="apellido2">Apellido Materno</label>
-                <input type="text" id="apellido2" name="Apellido"><br>
-                <label for="rfid">RFID</label>
-                <input type="text" id="rfid" name="RFID"><br>
-                <label for="carrera">Carrera</label>
-                <select name="carrera" id="carrera"">
-                    <option value ="">seleccione su carrera</option>
-                    <option value="ISIC">Ingenieria Civil</option>
-                    <option value="Meca">Ingenieria Electrica</option>
-                    <option value="Meca">Ingenieria Industrial</option>
-                    <option value="Meca">Ingenieria Mecatronica</option>
-                    <option value="Meca">Ingenieria Quimica</option>
-                    <option value="Meca">Ingenieria Logistica</option>
-                    <option value="Meca">Ingenieria en Sistemas</option>
-                    <option value="Meca">Licensiatura en Administracion</option>
-                    <option value="Meca">Ingenieria en Tecnologias de la informacion</option>
-                </select><br>
-                <label for="Puesto">Ingrese su puesto</label>
-                <input type="text" id="Puesto" name="Puesto"><br>
-            </div>
+            <label>Género:</label>
+            <select name="generoAlumno" id="generoAlumno">
+                <option value="">Seleccione su género</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select>
+        </div>
 
-            <!--datos del libre-->
-            <div id="libre" class="oculto">
-                <h3>Hola compañero Corredor</h3>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="Nombre"><br>
-                <label for="apellido1">Apellido Paterno</label>
-                <input type="text" id="apellido1" name="Apellido"><br>
-                <label for="apellido2">Apellido Materno</label>
-                <input type="text" id="apellido2" name="Apellido"><br>
-                <label for="rfid">RFID</label>
-                <input type="text" id="rfid" name="RFID"><br>
-            </div>
-            </form>
-           <script src="JavaScrip/seleccion.js"></script>
-          
-       
-        <a href="Registro.html">
-            <button type="submit"id="enviar">Aceptar</button>
-        </a>
-      
+        <!-- Sección Maestro -->
+        <div id="Docente" class="oculto">
+            <h3>Datos del Maestro / Administrativo</h3>
+            <label>Nombre:</label>
+            <input type="text" id="nombreDocente" name="nombreDocente">
+
+            <label>Apellido Paterno:</label>
+            <input type="text" id="apellidoPaternoDocente" name="apellidoPaternoDocente">
+
+            <label>Apellido Materno:</label>
+            <input type="text" id="apellidoMaternoDocente" name="apellidoMaternoDocente">
+
+            <label>RFID:</label>
+            <input type="text" id="rfidDocente" name="rfidDocente">
+
+            <label>Carrera:</label>
+            <select name="carreraDocente" id="carreraDocente">
+                <option value="">Seleccione su carrera</option>
+                <option value="Civil">Ingeniería Civil</option>
+                <option value="Electrica">Ingeniería Eléctrica</option>
+                <option value="Industrial">Ingeniería Industrial</option>
+                <option value="Mecatronica">Ingeniería Mecatrónica</option>
+                <option value="Quimica">Ingeniería Química</option>
+                <option value="Logistica">Ingeniería Logística</option>
+                <option value="Sistemas">Ingeniería en Sistemas</option>
+                <option value="Administracion">Licenciatura en Administración</option>
+                <option value="Informatica">Tecnologías de la Información</option>
+            </select>
+
+            <label>Puesto:</label>
+            <input type="text" id="puestoDocente" name="puestoDocente">
+        </div>
+
+        <!-- Sección Libre -->
+        <div id="Libre" class="oculto">
+            <h3>Datos del Corredor Libre</h3>
+            <label>Nombre:</label>
+            <input type="text" id="nombreLibre" name="nombreLibre">
+
+            <label>Apellido Paterno:</label>
+            <input type="text" id="apellidoPaternoLibre" name="apellidoPaternoLibre">
+
+            <label>Apellido Materno:</label>
+            <input type="text" id="apellidoMaternoLibre" name="apellidoMaternoLibre">
+
+            <label>RFID:</label>
+            <input type="text" id="rfidLibre" name="rfidLibre">
+        </div>
+
         <br>
-    </section>
-  
+        <button type="submit" id="enviar" disabled>Aceptar</button>
+    </form>
+
+    <!-- Script al final del body -->
+    <script src="JavaScrip/valorNoNull.js"></script>
+</section>
+
 </body>
 </html>
