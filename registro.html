@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Registro carrera</title>
+    <script src="js/validacionUsuario.js"></script>
+
 </head>
 <body>
-    <section>
-        <form action="registro" method="post">
-            <h2 >ingrese su usuario y contraseña</h2>
+    <section class="centro">
+        <img src="css/imag/logo.png" alt="logo tesji" width="60" height="60">
+        
+        <form id="formUsuario">
+            <h2>Ingrese un usuario y una contraseña</h2>
+            <h3>Su contraseña debe tener exactamente 8 caracteres</h3>
             <br>
-            <label for="usuario">Usuario</label>
-            <input  type="text" id="usuario" name="Usuario" placeholder="Usuario"/>
-            <br>
-            <label for="contraseña">Contraseña </label>
-            <input type="password" id="password" name="password" placeholder="password"/>
-            <br>
-            
-        </form>
-        <button class="bot" type="submit">Aceptar</button>
-        <br>
 
-        <button class="bot" type="submit">cancelar</button>
+            <label for="usuario">Usuario</label>
+            <input 
+                type="text" 
+                id="usuario" 
+                name="Usuario" 
+                placeholder="Ingrese su usuario" 
+                required
+            />
+            <br>
+
+            <label for="password">Contraseña</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Ingrese una contraseña"
+                minlength="8" 
+                maxlength="8" 
+                required
+            />
+            <br>
+
+            <button type="submit" id="enviar">Aceptar</button>
+            <button type="button" id="cancelar">Cancelar</button>
+        </form>
     </section>
+
+    <!-- Script separado -->
+    <script src="js/validacionUsuario.js"></script>
 </body>
 </html>
